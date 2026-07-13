@@ -1,83 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>NoiTV - Let's Plays & Collabs!</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="css/style.css">
+<title>NoiTV</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<!-- Icons -->
+<script src="https://unpkg.com/lucide@latest"></script>
+
 </head>
 
+
 <body>
+
 
 <div class="background"></div>
 
 
+<header class="header">
+
+<img 
+src="https://friendrewind.com/media/photos/thumbs/photo-fd871df0b779430f.webp"
+class="header-logo"
+>
+
+
+</header>
+
+
+
 <div class="layout">
 
-    <!-- Sidebar -->
-    <aside class="sidebar">
 
-        <div class="profile">
-
-            <img 
-                src="https://friendrewind.com/media/pfp/1771961771_3a481b14.webp"
-                class="pfp"
-                alt="NoiTV Profile Picture"
-            >
-
-            <h1>NoiTV</h1>
-
-            <p>Let's Plays & Collabs!</p>
-
-        </div>
+<aside class="sidebar">
 
 
-        <nav>
+<div class="profile">
 
-            <a href="pages/home.html">
-                🏠 Home
-            </a>
-
-            <a href="#">
-                ▶️ Videos
-            </a>
-
-            <a href="#">
-                ✍️ Blog
-            </a>
-
-            <a href="#">
-                🐦 Socials
-            </a>
-
-            <a href="#">
-                👤 About
-            </a>
-
-        </nav>
-
-    </aside>
+<img 
+src="https://friendrewind.com/media/pfp/1771961771_3a481b14.webp"
+class="pfp"
+>
 
 
+<h2>NoiTV</h2>
 
-    <!-- Main content -->
-    <main class="content">
-
-        <iframe 
-            src="pages/home.html"
-            frameborder="0"
-            name="contentFrame">
-        </iframe>
-
-    </main>
+<p>
+Let's Plays & Collabs!
+</p>
 
 
 </div>
 
 
+
+<nav>
+
+
+<a onclick="loadPage('home')">
+<i data-lucide="house"></i>
+Home
+</a>
+
+
+<a onclick="loadPage('videos')">
+<i data-lucide="play"></i>
+Videos
+</a>
+
+
+<a onclick="loadPage('blog')">
+<i data-lucide="pen-line"></i>
+Blog
+</a>
+
+
+<a onclick="loadPage('socials')">
+<i data-lucide="share-2"></i>
+Socials
+</a>
+
+
+<a onclick="loadPage('about')">
+<i data-lucide="user"></i>
+About
+</a>
+
+
+</nav>
+
+
+</aside>
+
+
+
+
+<main id="content" class="content">
+
+</main>
+
+
+
+</div>
+
+
+
 <script src="js/app.js"></script>
 
+<script>
+lucide.createIcons();
+</script>
+
+
 </body>
+
 </html>
