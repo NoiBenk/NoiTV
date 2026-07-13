@@ -219,3 +219,69 @@ nav {
 }
 
 }
+
+
+
+
+
+.header {
+
+height:100px;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+}
+
+
+
+.header-logo {
+
+height:90px;
+
+object-fit:contain;
+
+}
+
+
+
+.layout {
+
+height:calc(100vh - 100px);
+
+display:flex;
+
+gap:25px;
+
+padding:0 25px 25px;
+
+}
+
+
+
+nav a {
+
+display:flex;
+
+align-items:center;
+
+gap:12px;
+
+cursor:pointer;
+
+}
+
+
+
+nav svg {
+
+width:22px;
+
+height:22px;
+
+color:#00f6ff;
+
+}
